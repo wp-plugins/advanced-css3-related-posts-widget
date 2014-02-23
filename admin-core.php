@@ -375,7 +375,6 @@ function change_style_options(rpw_Style)
 <div class="simpleTabs">
 <ul class="simpleTabsNavigation">
     <li><a href="#">Classic layouts</a></li>
-	<li><a href="#">Modern layouts</a></li>
     <li><a href="#">Advanced Options</a></li>
     <li><a href="#">About</a></li>
 </ul>
@@ -385,13 +384,14 @@ function change_style_options(rpw_Style)
 		<tr>
 			<td align="center"><?php $rpw_Style = $rpw_related_posts_settings['rpw_Style'];?>
 			<?php $checkvalue = ''; if($rpw_Style == 'Thumbs_Left'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('Thumbs_Left');" type="radio" name="rpw_Style" value="Thumbs_Left" <?php echo $checkvalue ?>>Thumbs Left</td>
+			<input onclick="change_style_options('Thumbs_Left');" type="radio" name="rpw_Style" value="Thumbs_Left" <?php echo $checkvalue ?>>Thumbs 
+			Left</td>
 			<td align="center">
 			<?php $checkvalue = ''; if($rpw_Style == 'Thumbs_Right'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('Thumbs_Right');" type="radio" name="rpw_Style" value="Thumbs_Right" <?php echo $checkvalue ?>>Thumbs Right</td>
+			<input onclick="change_style_options('Thumbs_Right');" type="radio" name="rpw_Style" value="Thumbs_Right" <?php echo $checkvalue ?>>Thumbs 
+			Right</td>
 			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'Big_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('Big_Thumbs');" type="radio" name="rpw_Style" value="Big_Thumbs" <?php echo $checkvalue ?>>Big Thumbs</td>
+			&nbsp;</td>
 		</tr>
 		<tr>
 			<td align="center">
@@ -399,67 +399,7 @@ function change_style_options(rpw_Style)
 			<td align="center">
 			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/thmbsright.png" width="50" height="86"></td>
 			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/bigthumbs.png" width="49" height="109"></td>
-		</tr>
-		<tr>
-			<td align="center">
 			&nbsp;</td>
-			<td align="center">
-			&nbsp;</td>
-			<td align="center">
-			&nbsp;</td>
-		</tr>
-		<tr>
-			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'Wide_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('Wide_Thumbs');" type="radio" name="rpw_Style" value="Wide_Thumbs" <?php echo $checkvalue ?>>Wide Thumbs</td>
-			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'No_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('No_Thumbs');" type="radio" name="rpw_Style" value="No_Thumbs" <?php echo $checkvalue ?>>No Thumbs</td>
-			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'Just_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('Just_Thumbs');" type="radio" name="rpw_Style" value="Just_Thumbs" <?php echo $checkvalue ?>>Just Thumbs</td>
-		</tr>
-		<tr>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/widethumbs.png" width="48" height="88"></td>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/justdetails.png" width="49" height="54"></td>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/thumblist.png" width="25" height="109"></td>
-		</tr>
-		<tr>
-			<td align="center">
-			&nbsp;</td>
-			<td align="center">
-			&nbsp;</td>
-			<td align="center">
-			&nbsp;</td>
-		</tr>
-	</table>
-	</div>
-</div>
-<div class="simpleTabsContent" style="height: 401px; border: 1px solid #E9E9E9; padding: 4px">
-<div id="rpwbox2">
-	&nbsp;<table border="0" width="40%">
-		<tr>
-			<td align="center"><?php $rpw_Style = $rpw_related_posts_settings['rpw_Style'];?>
-			<?php $checkvalue = ''; if($rpw_Style == 'CSS-Thumbs_Left'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('CSS-Thumbs_Left');" type="radio" name="rpw_Style" value="CSS-Thumbs_Left" <?php echo $checkvalue ?>>CSS3 Thumbs Left</td>
-			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'CSS-Thumbs_Right'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('CSS-Thumbs_Right');" type="radio" name="rpw_Style" value="CSS-Thumbs_Right" <?php echo $checkvalue ?>>CSS3 Thumbs Right</td>
-			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'CSS-Big_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('CSS-Big_Thumbs');" type="radio" name="rpw_Style" value="CSS-Big_Thumbs" <?php echo $checkvalue ?>>CSS3 Big Thumbs</td>
-		</tr>
-		<tr>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/css3-thumbsleft.png" width="50" height="86"></td>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/css3-thmbsright.png" width="50" height="86"></td>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/css3-bigthumbs.png" width="49" height="109"></td>
 		</tr>
 		<tr>
 			<td align="center">
@@ -471,28 +411,23 @@ function change_style_options(rpw_Style)
 		</tr>
 		<tr>
 			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'CSS-Wide_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('CSS-Wide_Thumbs');" type="radio" name="rpw_Style" value="CSS-Wide_Thumbs" <?php echo $checkvalue ?>>CSS3 Wide Thumbs</td>
-			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'CSS-No_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('CSS-No_Thumbs');" type="radio" name="rpw_Style" value="CSS-No_Thumbs" <?php echo $checkvalue ?>>CSS3 No Thumbs</td>
-			<td align="center">
-			<?php $checkvalue = ''; if($rpw_Style == 'CSS-Just_Thumbs'){ $checkvalue = 'checked';}?>
-			<input onclick="change_style_options('CSS-Just_Thumbs');" type="radio" name="rpw_Style" value="CSS-Just_Thumbs" <?php echo $checkvalue ?>>CSS3 Just Thumbs</td>
-		</tr>
-		<tr>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/css3-widethumbs.png" width="48" height="88"></td>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/css3-justdetails.png" width="49" height="54"></td>
-			<td align="center">
-			<img border="0" src="<?php echo $rpwpluginsurl; ?>/images/css3-thumblist.png" width="25" height="109"></td>
-		</tr>
-		<tr>
+			&nbsp;</td>
 			<td align="center">
 			&nbsp;</td>
 			<td align="center">
 			&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+			Need more modern and new layouts (premium version)?</td>
+			<td align="center">
+			&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+			<b><font size="5">
+			<a href="http://www.wp-buy.com/live-preview-rpw/rpw-preview.htm">
+			Live Preview</a></font></b></td>
 			<td align="center">
 			&nbsp;</td>
 		</tr>
@@ -857,7 +792,7 @@ function change_style_options(rpw_Style)
 	and increase the internal links priority in google webmaster tools</p>
 	<h3>Features:</h3>
 	<ul>
-		<li>More than 12 attractive styles to to match your needs</li>
+		<li>Attractive styles to to match your needs</li>
 		<li>Multiple instances of the same widget</li>
 		<li>Title, Excerpt &amp; thumbnails</li>
 		<li>Display related post titles</li>
@@ -865,10 +800,6 @@ function change_style_options(rpw_Style)
 		<li>Ability to control the size of post thumbnails</li>
 		<li>Option to show post text excerpts</li>
 		<li>Option to control the length of the post excerpt</li>
-		<li>Option to choose the number of related posts to show</li>
-		<li>Option to control the shadow effect on images</li>
-		<li>Option to control the radius of the images</li>
-		<li>Ability to set float &amp; direction of post thumbnails and text too</li>
 		<li>Widget shown only on single post pages</li>
 	</ul>
 		<p style="text-align: center">
