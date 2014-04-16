@@ -18,11 +18,11 @@ $rpw_related_posts_settings = rpw_read_options();
 	
 	<?php
 	if($rpw_image_direction == 'left')
-		echo "margin: 3px 10px 3px 0;";
+		echo "margin: 0px 10px 0px 0px;";
 	else
-		echo "margin: 3px 0px 3px 10px;";
+		echo "margin: 0px 0px 0px 10px;";
 	?>
-    padding: 3px;
+    padding: 0px;
 }
 
 .related_posts_rpw_main_image img{
