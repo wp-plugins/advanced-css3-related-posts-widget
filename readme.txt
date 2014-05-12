@@ -1,7 +1,7 @@
 === Related Posts Widget 123 withThumbnails ===
 Contributors: wp-buy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ashrafweb%40gmail%2ecom&lc=US&item_name=aio%20plugins&item_number=aio&amount=19%2e00&currency_code=USD&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Tags: plugin, posts,related, entries, post, Related articles, page, Widget ,Related Posts
+Tags: Related Posts Widget, posts,related, Related Content, related entries, Related articles, page, similar posts ,Related Posts,posts plugins
 Requires at least: 2.9
 Tested up to: 3.9
 Stable tag: 1.0
