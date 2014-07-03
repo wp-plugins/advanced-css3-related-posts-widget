@@ -396,30 +396,29 @@ function form($instance)
     echo $before_widget;
 
     $title = empty($instance['title']) ? ' ' : apply_filters('widget_title', $instance['title']);
+    
+    if(is_single()){
 
- 
-
-    if (!empty($title))
-
-		echo $before_title . $title . $after_title;
-
-    else
-
-    	echo $before_title . 'Related Posts' . $after_title;
-
- 
-
-    // WIDGET CODE GOES HERE
-
-	echo get_related_posts_rpw();
-
- 
-
-    echo $after_widget;
-
-  }
-
- 
+		if (!empty($title))
+		
+			echo $before_title . $title . $after_title;
+		
+		else
+		
+			echo $before_title . 'Related Posts' . $after_title;
+		
+		
+		
+		// WIDGET CODE GOES HERE
+		
+		echo get_related_posts_rpw();
+		
+		
+		
+		echo $after_widget;
+		
+		}
+	}
 
 }
 
@@ -532,7 +531,7 @@ function rpw_options_page() {
 }
 
 //-----------disable the widget when its in home page---
-add_filter( 'sidebars_widgets', 'my_disable_widget' ,10);
+//add_filter( 'sidebars_widgets', 'my_disable_widget' ,10);
 
 function my_disable_widget( $sidebars_widgets ) {
 
@@ -544,6 +543,7 @@ function my_disable_widget( $sidebars_widgets ) {
             /* get all widget list in the area */
             foreach( $widget_list as $pos => $widget_id ){
 			$position = strpos($widget_id, "relatedpostswidget");
+			echo $position;
                 if ( $widget_id == 'relatedpostswidget-2')/* widget with id "relatedpostswidget" */
                 {
                     /* remove it */
