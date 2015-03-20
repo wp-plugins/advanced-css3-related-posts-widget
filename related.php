@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Related Posts Widget 123 withThumbnails
+Plugin Name: Related Posts Widget with Thumbnails
 Plugin URI: http://www.wp-buy.com/
 Description: Our plugin displaying related posts in a very great way as a sidebar widget to help visitors staying longer on your site.You can use this plugin to increasing the page rank of your internal posts to improve your SEO score and increase the internal links preiority in google webmaster tools
 Works with all custom post types!
-Version: 1.0
+Version: 1.0.0.2
 Author: wp-buy
 Author URI: http://www.wp-buy.com/
 */

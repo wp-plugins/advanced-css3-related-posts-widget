@@ -167,9 +167,10 @@ if($rpw_css3_thumb_radius != 'None'){ ?>
 }
 
 #related_posts_rpw ul{
+
 	margin:0px;
 
-	padding: 0px;
+	padding: 0 8px;
 	
 	justify-content: flex-start  flex-end  center   space-between  space-around;
 }

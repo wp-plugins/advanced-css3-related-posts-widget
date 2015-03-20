@@ -1,10 +1,10 @@
-=== Related Posts Widget 123 withThumbnails ===
+=== Related Posts Widget with Thumbnails ===
 Contributors: wp-buy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ashrafweb%40gmail%2ecom&lc=US&item_name=aio%20plugins&item_number=aio&amount=19%2e00&currency_code=USD&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: Related Posts Widget, posts,related, Related Content, related entries, Related articles, page, similar posts ,Related Posts,posts plugins
 Requires at least: 2.9
-Tested up to: 4.1
-Stable tag: 1.0
+Tested up to: 4.1.1
+Stable tag: trunk
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==

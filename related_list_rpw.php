@@ -21,7 +21,15 @@ $dont_show_image = '';
 	if($rpw_related_posts_settings['rpw_show_thumbs'] == 'Yes'){
     	$out_post_thumbnail = '<div class="related_posts_rpw_main_image"><a href="'.get_permalink($search->ID).'" rel="related" title="'.$title.'">';
     if ((function_exists('get_the_post_thumbnail')) && (has_post_thumbnail($search->ID))) {
+			$imgdata = wp_get_attachment_image_src( get_post_thumbnail_id(), 'rpw-thumb' ); //change rpw-thumb to whatever size you are using
+			$imgwidth = $imgdata[1]; // thumbnail's width [0] => url  [1] => width  [2] => height  [3] => is intermediate
+			$wanted_width = $rpw_related_posts_settings['rpw_thumbw']; //change this to your liking
+			//echo "<p>imgwidth:". $imgwidth. "wanted:" .$wanted_width. "</p>";
+			if ( $imgwidth == $wanted_width ) {
 				$out_post_thumbnail .= get_the_post_thumbnail( $search->ID, 'rpw-thumb', array('title' => $title,'alt' => $title,'class' => 'rpw_image'));
+			} else {
+				$out_post_thumbnail .= get_the_post_thumbnail( $search->ID, 'thumbnail', array('title' => $title,'alt' => $title,'class' => 'rpw_image'));
+			}
 		} else {
 			$postimage = get_post_meta($search->ID, 'image' , true);
 			$dont_show_image = 'No';
