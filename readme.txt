@@ -1,21 +1,15 @@
-=== Related Posts Widget with Thumbnails ===
-Contributors: wp-buy
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ashrafweb%40gmail%2ecom&lc=US&item_name=aio%20plugins&item_number=aio&amount=19%2e00&currency_code=USD&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Tags: Related Posts Widget, posts,related, Related Content, related entries, Related articles, page, similar posts ,Related Posts,posts plugins
-Requires at least: 2.9
-Tested up to: 4.1.1
-Stable tag: trunk
+=== Related Posts Widget with Thumbnails ===
+Contributors: wp-buy
+Donate link: http://goo.gl/UJVpbi
+Tags: Related Posts Widget, posts,related, Related Content, related entries, Related articles, page, similar posts ,Related Posts,posts plugins
+Requires at least: 3.9
+Tested up to: 4.1.1
+Stable tag: trunk
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
-<p>Here is wonderful plugin for displaying links to related posts beneath each 
-of your wordpress blog posts. The related articles are chosen from other posts 
-in that same tag. With this plugin many of your readers will remain on your site 
-for longer periods of time when they see related posts of interest.</p>
-<p>Our plugin displaying related posts in a very great way as a sidebar widget 
-to help visitors staying longer on your site.You can use this plugin to 
-increasing the page rank of your internal posts to improve your SEO score and 
-increase the internal links preiority in google webmaster tools</p>
+<p>Here is wonderful plugin for displaying links to related posts beneath each of your wordpress blog posts. The related articles are chosen from other posts in that same tag. With this plugin many of your readers will remain on your site for longer periods of time when they see related posts of interest.</p>
+<p>Our plugin displaying related posts in a very great way as a sidebar widget to help visitors staying longer on your site.You can use this plugin to increasing the page rank of your internal posts to improve your SEO score and increase the internal links preiority in google webmaster tools</p>
 ==Features:==
 <ul>
 	<li>More than 12 attractive styles to to match your needs</li>
@@ -78,15 +72,17 @@ You will not see any related posts because you must go to widets area into theme
 This version fixes a style CSS related issue. Upgrade immediately
 
 
-== Changelog ==
+== Changelog ==
+= 1.0.0.3 =
+* Fix yes/no option
+
 = 1.0 =
 * CSS table and td fixed
 * 3.3.1 compatibility fix
 * Added hooks and filters for displaying posts in the side bar
 * Added new 12 modern styles with easy control panel
 * More advanced control on css3 functions
-* Minor bug fixes
-* CSS Style fixing
+* Minor bug fixes
 
 = 0.8 =
 * changing priority of results order

@@ -599,11 +599,25 @@ function change_style_options(rpw_Style)
 				<td width="177" colspan="2">Use CSS3 Effects</td>
 
 				<td width="178">
-
+				
 				<select size="1" name="rpw_use_css3_effects">
-				<option selected value="Yes">Yes</option>
-				<option value="No">No</option>
-				</select></td>
+				<?php
+
+				$choice = '';
+
+				$rpw_use_css3_effects_temp = $rpw_related_posts_settings['rpw_use_css3_effects']; ?>
+
+				<?php if ($rpw_use_css3_effects_temp == 'Yes'){$choice = 'selected';}else{$choice = '';} ?>
+
+				<option <?php echo $choice ?> value="Yes">Yes</option>
+
+				<?php if ($rpw_use_css3_effects_temp == 'No'){$choice = 'selected';}else{$choice = '';} ?>
+
+				<option <?php echo $choice ?> value="No">No</option>
+				
+				</select>
+								
+				</td>
 
 				<td width="125">
 
